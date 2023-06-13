@@ -21,4 +21,4 @@ RUN pip install subaligner
 
 WORKDIR /scripts
 
-ENTRYPOINT ["python", "/extract_subtitle.py"]
+ENTRYPOINT ["python", "extract_subtitle.py"]
