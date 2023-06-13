@@ -1,14 +1,14 @@
-import json
+import ast
 import os
 from pathlib import Path
 
 from subaligner.utils import Utils
 
-mediaFile = json.loads(os.environ.get('mediaFile'))
-mediaInfo = json.loads(os.environ.get('mediaInfo'))
+mediaFile = ast.literal_eval(os.environ.get('mediaFile'))
+mediaInfo = ast.literal_eval(os.environ.get('mediaInfo'))
 stream_index = os.environ.get('stream_index', '0')
 
-print(mediaFile)
+print(mediaFile) 
 
 extract_subtitle = Utils().extract_matroska_subtitle
 
