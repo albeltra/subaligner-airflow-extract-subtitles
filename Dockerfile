@@ -13,11 +13,11 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
 
 RUN conda install -c conda-forge gxx
 
+RUN pip install subaligner
+
 RUN mkdir /scripts
 
 COPY ./scripts/ /scripts/
-
-RUN pip install subaligner
 
 WORKDIR /scripts
 
