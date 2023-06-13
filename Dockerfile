@@ -11,7 +11,7 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
     chmod +x Miniconda3-latest-Linux-x86_64.sh &&\
     bash Miniconda3-latest-Linux-x86_64.sh -b
 
-RUN conda install -c conda-forge gxx  
+RUN conda install -c conda-forge gxx
 
 RUN mkdir /scripts
 
