@@ -10,7 +10,7 @@ stream_index = os.environ.get('stream_index', '0')
 
 extract_subtitle = Utils().extract_matroska_subtitle
 
-output_file_path = "/data/" + Path(mediaFile['path']).name + '.srt'
+output_file_path = "/audio-subs/" + Path(mediaFile['path']).name + '.srt.srt' 
 
 kwargs = {'mkv_file_path': mediaFile['path'],
           'stream_index': stream_index,
