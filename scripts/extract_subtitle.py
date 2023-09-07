@@ -18,5 +18,6 @@ kwargs = {'mkv_file_path': mediaFile['path'],
           'timeout_secs': 10000
           }
 
-if not os.path.exists(output_file_path + '.srt.srt') and not os.path.exists(output_file_path + '.pgs.srt') and not os.path.exists(output_file_path + '.vob.srt'):
+if not os.path.exists(output_file_path + '.en.srt') and not os.path.exists(output_file_path + '.srt.srt') and not os.path.exists(output_file_path + '.pgs.srt') and 
+not os.path.exists(output_file_path + '.vob.srt'):
     extract_subtitle(**kwargs)
